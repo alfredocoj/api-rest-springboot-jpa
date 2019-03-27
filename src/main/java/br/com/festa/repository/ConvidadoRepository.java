@@ -1,9 +1,11 @@
-package br.seap.festa.repository;
+package br.com.festa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.seap.festa.model.Convidado;
+import br.com.festa.model.Convidado;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface ConvidadoRepository extends JpaRepository<Convidado, Long> {
 
 }

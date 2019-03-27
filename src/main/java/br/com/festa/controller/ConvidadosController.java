@@ -1,4 +1,4 @@
-package br.seap.festa.controller;
+package br.com.festa.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.seap.festa.model.Convidado;
-import br.seap.festa.service.ConvidadoService;
+import br.com.festa.model.Convidado;
+import br.com.festa.service.ConvidadoService;
 
 @RestController
 @RequestMapping(value="/")

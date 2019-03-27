@@ -1,4 +1,4 @@
-package br.seap.festa.model;
+package br.com.festa.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
