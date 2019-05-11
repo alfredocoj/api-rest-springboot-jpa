@@ -1,4 +1,4 @@
-package br.seap.festa.service;
+package br.com.festa.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.seap.festa.model.Convidado;
-import br.seap.festa.repository.ConvidadoRepository;
+import br.com.festa.model.Convidado;
+import br.com.festa.repository.ConvidadoRepository;
 
 @Service
 public class ConvidadoService {
