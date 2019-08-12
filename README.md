@@ -1,14 +1,14 @@
 # api-rest-springboot-jpa
-API rest exemplo com spring-boot, JPA e MySQL.
+API rest example with spring-boot, JPA and MySQL.
 
 # Docker
 
-Gerar imagem docker do projeto spring.
+Generate docker image of the spring project.
 ```
 mvn install dockerfile:build -DskipTests
 ```
 
-Executar imagem docker:
+Run docker image:
 ```
 docker run --rm -p 8082:8082 --cpus=3 --cpuset-cpus="5,6,7" --network="host" --name="festa" springio/festa
 ```
