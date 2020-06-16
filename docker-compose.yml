@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3'
 volumes:
   data:
 services:
@@ -8,6 +8,8 @@ services:
       - "3306:3306"
     volumes:
       - data:/var/lib/mysql
+    networks:
+      - db-network
     environment:
       - MYSQL_ROOT_PASSWORD=1234
       - MYSQL_DATABASE=festa
@@ -16,6 +18,11 @@ services:
     links:
       - db
     ports:
-      - 82:80
+      - 81:80
+    networks:
+      - db-network
     environment:
       - PMA_ARBITRARY=1
+
+networks:
+  db-network:
